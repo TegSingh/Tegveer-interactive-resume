@@ -78,8 +78,7 @@ const projects = [
         ],
         "source": "NA",
         "image": merng
-    },
-
+    }
 ]
 
 export default projects;
