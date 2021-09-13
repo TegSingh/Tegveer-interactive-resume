@@ -1,17 +1,17 @@
 import React from 'react';
 
-const ProjectCard = ({ id, title, category, technologies, completion, description, image }) => {
+const CertificateCard = ({ id, title, organization, completion, skills, description, image }) => {
     return (
         <React.Fragment>
             <section>
                 <img key={id} src={image} alt={title} />
                 <h2>{title}</h2>
-                <p>{category}</p>
-                <p>{completion}</p>
+                <h4>{organization}</h4>
                 <div className="underline"></div>
+                <p>{completion}</p>
                 <ul>
-                    {technologies.map((technology) => {
-                        return <li>{technology}</li>
+                    {skills.map((skill) => {
+                        return <li>{skill}</li>
                     })}
                 </ul>
                 <p>{description}</p>
@@ -20,4 +20,4 @@ const ProjectCard = ({ id, title, category, technologies, completion, descriptio
     )
 }
 
-export default ProjectCard;
+export default CertificateCard;

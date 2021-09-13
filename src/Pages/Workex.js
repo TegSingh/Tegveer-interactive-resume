@@ -1,17 +1,12 @@
 import React from 'react';
 import workex from '../Data/workex';
+import WorkexList from '../Components/WorkexList';
 
 const Workex = () => {
     return (
         <React.Fragment>
             <h2>Work Experience Page</h2>
-            {
-                workex.map((ex) => {
-                    return (<React.Fragment>
-                        <img src={ex.image} alt={ex.title} />
-                    </React.Fragment>)
-                })
-            }
+            <WorkexList />
         </React.Fragment>
     )
 }

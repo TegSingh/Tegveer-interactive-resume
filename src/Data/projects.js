@@ -6,6 +6,7 @@ import merng from '../Images/Projects/MERNG.png';
 
 const projects = [
     {
+        "id": 1,
         "title": "Multiple Object Tracking LIDAR",
         "category": "Research",
         "technologies": [
@@ -21,6 +22,7 @@ const projects = [
         "image": motl
     },
     {
+        "id": 2,
         "title": "Optimization of Wireless Sensor Networks using tsch-sim",
         "category": "Research",
         "technologies": [
@@ -37,6 +39,7 @@ const projects = [
         "image": tsch
     },
     {
+        "id": 3,
         "title": "Embedded Software System vulnerabilities Dataset",
         "category": "Research",
         "technologies": [
@@ -51,6 +54,7 @@ const projects = [
         "image": vulnerabilitydataset
     },
     {
+        "id": 4,
         "title": "Navigation System",
         "category": "Course",
         "technologies": [
@@ -66,6 +70,7 @@ const projects = [
         "image": navigation
     },
     {
+        "id": 5,
         "title": "Student Assistant App",
         "categories": "Personal",
         "technologies": [

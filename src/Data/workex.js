@@ -6,6 +6,7 @@ import marigold from '../Images/Workex/marigold.png';
 
 const workex = [
     {
+        "id": 1,
         "title": "Research Associate",
         "organization": "Ontario Tech University",
         "start": "May 2021",
@@ -19,9 +20,10 @@ const workex = [
             "Took part in writing research papers and presentations to senior engineers",
             "Refer to the projects page"
         ],
-        "image": otu
+        "logo": otu
     },
     {
+        "id": 2,
         "title": "Peer tutor",
         "organization": "Ontario Tech University",
         "start": "September 2021",
@@ -34,9 +36,10 @@ const workex = [
             "Assisted lower year in problem solving and studying techniques",
             "Communicated with pass leaders to create a well-coordinated learning environment"
         ],
-        "image": otu
+        "logo": otu
     },
     {
+        "id": 3,
         "title": "Junior Javascript Developer",
         "organization": "In touch guru solutions",
         "start": "May 2020",
@@ -48,9 +51,10 @@ const workex = [
             "Assisted Senior consultant with database management and coding in JavaScript",
             "Communicated with clients and documented requirements"
         ],
-        "image": intouch
+        "logo": intouch
     },
     {
+        "id": 4,
         "title": "Cashier",
         "organization": "Harvey's",
         "start": "May 2019",
@@ -63,9 +67,10 @@ const workex = [
             "Developed superior time management skills to adapt quickly to fast paced environment",
             "Ensured satisfactory food quality and proper hygienic measures were maintained"
         ],
-        "image": harveys
+        "logo": harveys
     },
     {
+        "id": 5,
         "title": "Manager",
         "organization": "Marigold Indian Bistro",
         "start": "May 2019",
@@ -78,9 +83,10 @@ const workex = [
             "Great organization skills developed through handling phone calls and cash transactions",
             "Calculated weekly sale statistics and ensured proper cleanliness measures were taken"
         ],
-        "image": marigold
+        "logo": marigold
     },
     {
+        "id": 6,
         "title": "Delivery Partner",
         "organization": "Uber Eats",
         "start": "May 2019",
@@ -92,7 +98,7 @@ const workex = [
             "Retrieved food from restaurants and delivered to customers before the designated time",
             "Achieved a high level of customer satisfaction (98%)"
         ],
-        "image": uber
+        "logo": uber
     },
 
 ]
