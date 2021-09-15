@@ -23,7 +23,7 @@ const projects = [
     },
     {
         "id": 2,
-        "title": "Optimization of Wireless Sensor Networks using tsch-sim",
+        "title": "Optimization of Wireless Sensor Networks using TSCH-Sim",
         "category": "Research",
         "technologies": [
             "Javascript", "Computer Networks"
@@ -40,7 +40,7 @@ const projects = [
     },
     {
         "id": 3,
-        "title": "Embedded Software System vulnerabilities Dataset",
+        "title": "Embedded Software System Vulnerabilities Dataset",
         "category": "Research",
         "technologies": [
             "C/C++"
