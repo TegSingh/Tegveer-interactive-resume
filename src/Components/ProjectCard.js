@@ -1,27 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import ProjectDetails from './ProjectDetails';
 
 const ProjectCard = ({ id, title, category, technologies, completion, description, image }) => {
+
+    const [seeDetails, setSeeDetails] = useState(true);
+    const details = { id, category, technologies, completion, description };
+
     return (
         <React.Fragment>
             <section className="card">
-                <h2 className="card-title">{title}</h2>
+                <p className="card-title">{title}</p>
                 <div>
                     <img key={id} src={image} alt={title} className="card-image" />
                 </div>
-                <div className="container-card">
-                    <div className="container-left">
-                        <p>Category: {category}</p>
-                        <p>Completion: {completion}</p>
-                        <ul>
-                            {technologies.map((technology) => {
-                                return <li>{technology}</li>
-                            })}
-                        </ul>
+                <button className="card-button" onClick={() => setSeeDetails(!seeDetails)}>See details</button>
+                {seeDetails &&
+                    <div className="card-details">
+                        <ProjectDetails {...details} />
                     </div>
-                    <div className="container-right">
-                        <p>{description}</p>
-                    </div>
-                </div>
+                }
+
             </section>
         </React.Fragment>
     )

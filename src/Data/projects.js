@@ -23,7 +23,7 @@ const projects = [
     },
     {
         "id": 2,
-        "title": "Optimization of Wireless Sensor Networks using TSCH-Sim",
+        "title": "Wireless Sensor Network Optimization using TSCH-Sim",
         "category": "Research",
         "technologies": [
             "Javascript", "Computer Networks"
