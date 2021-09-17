@@ -13,6 +13,7 @@ const ProjectDetails = ({ id, category, technologies, completion, description })
                     })}
                 </ul>
             </div>
+            <div className="underline"></div>
             <div>
                 <ul>
                     {

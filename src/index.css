@@ -9,7 +9,6 @@ body {
     width: 30%;
     border-radius: 20px;
     margin: 20px;
-    height: 580px;
     float: left;
 }
 
@@ -25,7 +24,7 @@ body {
     text-align: center;
     padding: 5%;
     margin: auto;
-    height: 10%;
+    height: auto;
     background-color: rgb(6, 55, 146);
     color: rgba(255, 255, 255, 0.959);
     border-top-left-radius: inherit;
@@ -50,4 +49,28 @@ body {
 .card-button:hover {
     background-color: #47f538;
     transition: 1s;
+}
+
+.underline {
+    width: 90%;
+    height: 0.05rem;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+}
+
+.card-info {
+    padding: 5%;
+    display: none;
+    transition: 1s;
+}
+
+.card-details {
+    z-index: 9;
+    padding: 5%;
+    margin: auto;
+    opacity: 1;
+    height: auto;
+    width: 50%;
 }

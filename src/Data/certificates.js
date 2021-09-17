@@ -15,7 +15,7 @@ const certificates = [
     },
     {
         "id": 2,
-        "title": "Django Application Development using SQL and Databases",
+        "title": "Django Application Development",
         "organization": "IBM",
         "completion": "2021-06-16",
         "skills": [
