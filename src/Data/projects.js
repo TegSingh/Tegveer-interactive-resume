@@ -3,6 +3,7 @@ import tsch from '../Images/Projects/tsch-sim.png';
 import navigation from '../Images/Projects/navigation.png';
 import vulnerabilitydataset from '../Images/Projects/vulnerability-dataset.png';
 import merng from '../Images/Projects/MERNG.png';
+import gitpy from '../Images/Projects/gitpy.png'
 
 const projects = [
     {
@@ -72,6 +73,21 @@ const projects = [
     },
     {
         "id": 5,
+        "title": "Github Stats - Python",
+        "categories": "Research",
+        "technologies": [
+            "Python", "Git", "GitPython", "data structures"
+        ],
+        "completion": "Currently in progress",
+        "description": [
+            "This project contains scripts to get github author, commit and file stats",
+            "The scripts generates stats like #commits/authors per file, #commits/author, along with other commit details",
+        ],
+        "source": "https://github.com/TegSingh/Github-Python",
+        "image": gitpy
+    },
+    {
+        "id": 6,
         "title": "Student Assistant App",
         "categories": "Personal",
         "technologies": [

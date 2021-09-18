@@ -1,10 +1,18 @@
 import React from 'react';
+import { ImCross } from 'react-icons/im';
+import { useGlobalContext } from '../context';
 
-const ProjectDetails = ({ id, category, technologies, completion, description }) => {
-    console.log(id, category, technologies, completion, description)
+const ProjectDetails = ({ id, category, technologies, completion, description, source }) => {
+
+    const { closeProjectDetails } = useGlobalContext();
+    console.log(id, category, technologies, completion, description);
+
     return (
         <React.Fragment>
             <div>
+                <button className="close-button" onClick={() => closeProjectDetails()}>
+                    <ImCross />
+                </button>
                 <p>Category: {category}</p>
                 <p>Completion: {completion}</p>
                 <ul>
@@ -12,6 +20,7 @@ const ProjectDetails = ({ id, category, technologies, completion, description })
                         return <li>{technology}</li>
                     })}
                 </ul>
+                <p>{source}</p>
             </div>
             <div className="underline"></div>
             <div>

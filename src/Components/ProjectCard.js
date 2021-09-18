@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import ProjectDetails from './ProjectDetails';
 import { useGlobalContext } from '../context';
 
-const ProjectCard = ({ id, title, category, technologies, completion, description, image }) => {
+const ProjectCard = ({ id, title, category, technologies, completion, description, image, source }) => {
 
     const { seeDetails, display_id, showProjectDetails } = useGlobalContext()
-    const details = { id, category, technologies, completion, description };
+    const details = { id, category, technologies, completion, description, source };
 
     if (seeDetails && id === display_id) {
         return (

@@ -12,7 +12,6 @@ body {
     float: left;
 }
 
-
 .card-image {
     width: 94%;
     max-height: 50%;
@@ -71,7 +70,7 @@ body {
     position: fixed;
     color: black;
     font-size: medium;
-    margin: auto;
+    margin-left: 27.5%;
     opacity: 1;
     background-color: #f1e5e5;
     width: 40%;
@@ -79,4 +78,13 @@ body {
     padding: 1%;
     border-radius: 5%;
     border: solid 2pt rgb(8, 4, 71);
+}
+
+.close-button {
+    background: none;
+    border: none;
+    margin: 2%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }

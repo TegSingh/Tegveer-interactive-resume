@@ -16,7 +16,12 @@ const AppProvider = ({ children }) => {
 
     const showProjectDetails = (id) => {
         console.log(`Show project details called for ${id}`);
-        dispatch({ type: 'SHOW_PROJECT_INFO', payload: id })
+        dispatch({ type: 'SHOW_PROJECT_DETAILS', payload: id })
+    };
+
+    const closeProjectDetails = () => {
+        console.log("Close project details called");
+        dispatch({ type: 'CLOSE_PROJECT_DETAILS' });
     };
 
     return (
@@ -24,6 +29,7 @@ const AppProvider = ({ children }) => {
             value={{
                 ...state,
                 showProjectDetails,
+                closeProjectDetails
             }}
         >
             {children}
