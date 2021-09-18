@@ -12,6 +12,7 @@ body {
     float: left;
 }
 
+
 .card-image {
     width: 94%;
     max-height: 50%;
@@ -67,10 +68,15 @@ body {
 }
 
 .card-details {
-    z-index: 9;
-    padding: 5%;
+    position: fixed;
+    color: black;
+    font-size: medium;
     margin: auto;
     opacity: 1;
+    background-color: #f1e5e5;
+    width: 40%;
     height: auto;
-    width: 50%;
+    padding: 1%;
+    border-radius: 5%;
+    border: solid 2pt rgb(8, 4, 71);
 }

@@ -16,7 +16,8 @@ const projects = [
         "description": [
             "This is a research project that uses machine learning to detect Objects in real time",
             "Kalman Filters were used and a dynamic approach approach was proposed to obstacle tracking in robots",
-            "The image shows a simulation with clusters formed around the moving objects indicating that they have been succesfully detected"
+            "The image shows a simulation with clusters formed around the moving objects indicating that they have been succesfully detected",
+            "A research paper for this was approved and published"
         ],
         "source": "NA",
         "image": motl
