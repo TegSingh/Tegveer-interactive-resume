@@ -4,12 +4,17 @@ const reducer = (state, action) => {
 
     // Show the project details window
     if (action.type === 'SHOW_PROJECT_DETAILS') {
-        return { ...state, seeDetails: true, display_id: newid }
+        return { ...state, seeProjectDetails: true, display_project_id: newid }
     }
 
     // Close the project details window
     if (action.type === 'CLOSE_PROJECT_DETAILS') {
-        return { ...state, seeDetails: false, display_id: 0 }
+        return { ...state, seeProjectDetails: false, display_project_id: 0 }
+    }
+
+    // Show the certificate details window
+    if (action.type === 'SHOW_CERTIFICATE_DETAILS') {
+        return { ...state, seeCertificateDetails: true, display_certificate_id: newid }
     }
 };
 

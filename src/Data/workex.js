@@ -60,7 +60,7 @@ const workex = [
         "start": "May 2019",
         "end": "August 2019",
         "highlights": [
-            "customer-service"
+            "Customer Service", "Time Management"
         ],
         "description": [
             "Received proper training and worked at the grill and fryer to prepare food for customers",
@@ -76,7 +76,7 @@ const workex = [
         "start": "May 2019",
         "end": "October 2019",
         "highlights": [
-            "Customer Service", "Mangement"
+            "Customer Service", "Management"
         ],
         "description": [
             "Supervised and superintended a team of multiple servers to provide customer satisfaction",

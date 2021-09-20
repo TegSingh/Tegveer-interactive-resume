@@ -7,8 +7,10 @@ import reducer from './reducer';
 const AppContext = React.createContext();
 
 const initialState = {
-    seeDetails: false,
-    display_id: 0
+    seeProjectDetails: false,
+    display_project_id: 0,
+    seeCertificateDetails: false,
+    display_certificate_id: 0
 };
 
 const AppProvider = ({ children }) => {
@@ -24,12 +26,17 @@ const AppProvider = ({ children }) => {
         dispatch({ type: 'CLOSE_PROJECT_DETAILS' });
     };
 
+    const showCertificateDetails = (id) => {
+        console.log("Show certificate details called");
+        dispatch({ type: 'SHOW_CERTIFICATE_DETAILS', payload: id });
+    }
     return (
         <AppContext.Provider
             value={{
                 ...state,
                 showProjectDetails,
-                closeProjectDetails
+                closeProjectDetails,
+                showCertificateDetails
             }}
         >
             {children}

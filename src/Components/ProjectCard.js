@@ -4,10 +4,10 @@ import { useGlobalContext } from '../context';
 
 const ProjectCard = ({ id, title, category, technologies, completion, description, image, source }) => {
 
-    const { seeDetails, display_id, showProjectDetails } = useGlobalContext()
+    const { seeProjectDetails, display_project_id, showProjectDetails } = useGlobalContext()
     const details = { id, category, technologies, completion, description, source };
 
-    if (seeDetails && id === display_id) {
+    if (seeProjectDetails && id === display_project_id) {
         return (
             <React.Fragment>
                 <section key={id} className="card">
