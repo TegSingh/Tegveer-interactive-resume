@@ -1,6 +1,8 @@
-body {
+html, body {
     background-color: #ffffff;   
-    font-family:sans-serif
+    font-family:sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
@@ -177,4 +179,29 @@ body {
     float: right;
     text-align: left;
     line-height: 60%;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* Sidebar */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+   padding: 0;
+   margin: 0;
+   overflow: auto;
+   left: 0;
+   top: 0;
+   float: left;
+   height: 100%;
+   width: 30%;
+   background-color: rgb(214, 227, 228); 
+   position: fixed;
+}
+
+.profile-picture {
+    height: 30%;
+    width: 70%;
+    border-radius: 50%;
+    position: absolute;
+    margin: 15%;
 }

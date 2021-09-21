@@ -5,22 +5,28 @@ import Dashboard from '../Pages/Dashboard';
 import Projects from '../Pages/Projects';
 import Certifications from '../Pages/Certifications';
 import Workex from '../Pages/Workex';
+import profile from '../Images/profile.PNG';
 
 const Sidebar = () => {
     return (
         <React.Fragment>
             <Router>
-                <ul>
-                    <li>
-                        <Link to='/projects'>Projects</Link>
-                    </li>
-                    <li>
-                        <Link to='/certifications'>Certifications</Link>
-                    </li>
-                    <li>
-                        <Link to='/workex'>Work Experience</Link>
-                    </li>
-                </ul>
+                <div className="sidebar">
+                    <div className="profile-picture-div">
+                        <img src={profile} alt="Profile-picture" className="profile-picture" />
+                    </div>
+                    <ul>
+                        <li>
+                            <Link to='/projects'>Projects</Link>
+                        </li>
+                        <li>
+                            <Link to='/certifications'>Certifications</Link>
+                        </li>
+                        <li>
+                            <Link to='/workex'>Work Experience</Link>
+                        </li>
+                    </ul>
+                </div>
                 <Switch>
                     <Route exact path="/"><Dashboard /></Route>
                     <Route exact path="/projects"><Projects /></Route>
