@@ -10,7 +10,6 @@ import Sidebar from '../Components/Sidebar'
 const ProjectList = () => {
     return (
         <React.Fragment>
-            <Sidebar />
             <div>
                 {
                     projects.map((project) => {

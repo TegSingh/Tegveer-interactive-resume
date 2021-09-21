@@ -8,7 +8,6 @@ import Sidebar from '../Components/Sidebar'
 const CertificateList = () => {
     return (
         <React.Fragment>
-            <Sidebar />
             <h2>Certifications Page</h2>
             {
                 certificates.map((certificate) => {

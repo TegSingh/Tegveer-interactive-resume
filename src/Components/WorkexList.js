@@ -8,7 +8,6 @@ import Sidebar from '../Components/Sidebar';
 const WorkexList = () => {
     return (
         <React.Fragment>
-            <Sidebar />
             <h2>Workex Page</h2>
             {
                 workex.map((ex) => {

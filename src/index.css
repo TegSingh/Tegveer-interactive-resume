@@ -193,15 +193,39 @@ html, body {
    top: 0;
    float: left;
    height: 100%;
-   width: 30%;
+   width: 25%;
    background-color: rgb(214, 227, 228); 
    position: fixed;
 }
 
 .profile-picture {
-    height: 30%;
-    width: 70%;
+    height: auto;
+    width: 80%;
     border-radius: 50%;
     position: absolute;
-    margin: 15%;
+    margin: 10%;
 }
+
+#name {
+    text-align: center;
+    background-color: rgb(6, 55, 146);
+    color: white;
+    padding: 0.5%;
+    font-weight: 100;
+}
+
+.info {
+    padding: 3%;
+    margin: 0;
+}
+
+#description {
+    background-color: ;    
+}
+
+.icons {
+    color: black;
+    height: 25px;
+    width: auto;;
+}
+
