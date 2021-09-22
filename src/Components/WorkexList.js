@@ -8,15 +8,15 @@ import Sidebar from '../Components/Sidebar';
 const WorkexList = () => {
     return (
         <React.Fragment>
-            <h2>Workex Page</h2>
-            {
-                workex.map((ex) => {
-                    return <WorkexCard {...ex} />
-                })
-            }
-            <button className="home-button">
-                <Link to='/'>Back Home</Link>
-            </button>
+            <div className="workex-list">
+                <h2>Workex Page</h2>
+                {
+                    workex.map((ex) => {
+                        return <WorkexCard {...ex} />
+                    })
+                }
+                <Link to='/' className="home-button-link">Back Home</Link>
+            </div>
         </React.Fragment>
     )
 }

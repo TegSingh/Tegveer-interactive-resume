@@ -8,17 +8,17 @@ import Sidebar from '../Components/Sidebar'
 const CertificateList = () => {
     return (
         <React.Fragment>
-            <h2>Certifications Page</h2>
-            {
-                certificates.map((certificate) => {
-                    return (
-                        < CertificateCard {...certificate} />
-                    );
-                })
-            }
-            <button className="home-button">
-                <Link to='/'>Back Home</Link>
-            </button>
+            <div className="certificate-list">
+                <h2>Certifications Page</h2>
+                {
+                    certificates.map((certificate) => {
+                        return (
+                            < CertificateCard {...certificate} />
+                        );
+                    })
+                }
+                <Link to='/' className="home-button-link">Back Home</Link>
+            </div>
         </React.Fragment>
     )
 }

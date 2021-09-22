@@ -42,7 +42,7 @@ const projects = [
     },
     {
         "id": 3,
-        "title": "Embedded Software Vulnerability DS",
+        "title": "Embedded Linux Vulnerability DS",
         "category": "Research",
         "technologies": [
             "C/C++"

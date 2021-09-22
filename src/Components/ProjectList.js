@@ -10,7 +10,7 @@ import Sidebar from '../Components/Sidebar'
 const ProjectList = () => {
     return (
         <React.Fragment>
-            <div>
+            <div className="project-list">
                 {
                     projects.map((project) => {
                         return (
@@ -18,10 +18,8 @@ const ProjectList = () => {
                         );
                     })
                 }
+                <Link to='/' className="home-button-link">Back Home</Link>
             </div>
-            <button className="home-button">
-                <Link to='/'>Back Home</Link>
-            </button>
         </React.Fragment>
     )
 }
