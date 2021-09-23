@@ -18,39 +18,51 @@ const Sidebar = () => {
                     <div className="name">
                         <h1>Tegveer Singh</h1>
                     </div>
-                    <div id="sidebar-description">
-                        <p className="info">tegveer2211@gmail.com</p>
-                        <p className="info">Ontario Tech University</p>
-                        <p className="info">Software Engineering</p>
-                        <p className="info">
-                            <a href="https://github.com/TegSingh">
-                                <GoMarkGithub className="icons" />
-                            </a>
-                        </p>
-                        <p className="info">
-                            <FiPhoneCall className="icons" />
-                        </p>
-                        <p className="info">
-                            {/* prevent this from moving to a new page, instead duplicate the webpage */}
-                            <a href="https://www.linkedin.com/in/tegveer-singh-067548172/">
-                                <FaLinkedin className="icons" />
-                            </a>
-                        </p>
-                    </div>
                     <div className="profile-picture-div">
                         <img src={profile} alt="Profile-picture" className="profile-picture" />
                     </div>
-                    <ul>
-                        <li>
+                    <div id="sidebar-description">
+                        <div id="github-div">
+                            <p className="info">
+                                <a href="https://github.com/TegSingh" id="github" >
+                                    <GoMarkGithub className="icons" />
+                                </a>
+                            </p>
+                        </div>
+                        <div id="phone-div">
+                            <p className="info" id="phone" >
+                                <FiPhoneCall className="icons" />
+                            </p>
+                        </div>
+                        <div id="linked-in-div">
+                            <p className="info">
+                                {/* prevent this from moving to a new page, instead duplicate the webpage */}
+                                <a href="https://www.linkedin.com/in/tegveer-singh-067548172/" id="linked-in" >
+                                    <FaLinkedin className="icons" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p className="router-link">
+                            <Link to='/' className="sidebar-link">Home</Link>
+                        </p>
+                        <p className="router-link">
                             <Link to='/projects' className="sidebar-link">Projects</Link>
-                        </li>
-                        <li>
+                        </p>
+                        <p className="router-link">
                             <Link to='/certifications' className="sidebar-link">Certifications</Link>
-                        </li>
-                        <li>
+                        </p>
+                        <p className="router-link">
                             <Link to='/workex' className="sidebar-link">Work Experience</Link>
-                        </li>
-                    </ul>
+                        </p>
+                        <p className="router-link">
+                            <a className="sidebar-link">Transcript</a>
+                        </p>
+                        <p className="router-link">
+                            <a className="sidebar-link">Resume</a>
+                        </p>
+                    </div>
                 </div>
                 <Switch>
                     <Route exact path="/"><Dashboard /></Route>
@@ -59,7 +71,7 @@ const Sidebar = () => {
                     <Route exact path="/workex"><Workex /></Route>
                 </Switch>
             </Router>
-        </React.Fragment>
+        </React.Fragment >
     )
 }
 

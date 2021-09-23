@@ -10,13 +10,54 @@ html, body {
 }
 
 .underline {
-    width: 95%;
+    width: 97%;
     height: 0.1rem;
     margin: auto;
-    background: black;
-    
+    background: black;   
 }
 
+.name-title {
+    top: 0;
+    padding: 4px 0px 3px 15px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.name-title-left {
+    width: 70%;
+    float: left;
+}
+
+.name-title-right {
+    width: 25%;
+    float: right;
+    margin-right: 5%;
+}
+
+.home-button-link {
+    padding: 10px;
+    background-color: #b19620;
+    color: white;
+    border-radius: 15%;
+    text-decoration: none;
+    margin: 15px;
+    float: right;
+}
+
+.home-button-link:visited, .home-button-link:active {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.home-button-link:hover {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    color: #3b20b1;
+    background-color: #ccc3c3;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    transition: 1s;
+    text-decoration: none;
+}
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* Projects and certificates */
@@ -231,10 +272,15 @@ html, body {
 
 .profile-picture {
     height: auto;
-    width: 80%;
+    width: 84%;
     border-radius: 50%;
     position: absolute;
-    margin: 10%;
+    margin: 8%;
+    margin-top: 5%;
+}
+
+.profile-picture-div {
+    height: 44%;
 }
 
 .name {
@@ -245,61 +291,81 @@ html, body {
     font-weight: 100;
 }
 
-.name-title {
-    top: 0;
-    padding: 4px 0px 3px 15px;
-    width: 100%;
-    margin-left: 10px;
-}
-
-.name-title-left {
-    width: 70%;
-    float: left;
-}
-
-.name-title-right {
-    width: 25%;
-    float: right;
-    margin-right: 5%;
-}
-
-.home-button-link {
-    padding: 10px;
-    background-color: #b19620;
-    color: white;
-    border-radius: 15%;
-    text-decoration: none;
-    margin: 15px;
-    float: right;
-}
-
-.home-button-link:visited, .home-button-link:active {
-    text-decoration: none;
-    color: white;
-    transition: 1s;
-}
-
-.home-button-link:hover {
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    color: #3b20b1;
-    background-color: #ccc3c3;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    transition: 1s;
-    text-decoration: none;
-}
-
 .info {
-    padding: 3%;
+    padding: 1%;
     margin: 0;
-}
-
-#sidebar-description {
-    height: 30%
+    margin-left: 2%;
 }
 
 .icons {
-    color: black;
-    height: 25px;
-    width: auto;;
+    padding: 10%;
+    height: 40px;
+    width: auto;
+    background-color: white;
+    border-radius: 25%;
+    border: solid 2pt white;
 }
 
+.icons:hover {
+    border-color: rgb(184, 195, 196);
+    transition: 1s;
+}
+
+#phone-div {
+    color: #19a70c;
+    width: 25%;
+    float: left;
+    padding: 4%;
+}
+
+#github-div {
+    color: black;
+    width: 25%;
+    float: left;
+    padding: 4%;
+    padding-left: 9%;
+}
+
+#linked-in-div {
+    color: #3b20b1;
+    width: 20%;
+    float: left;
+    padding: 4%;
+}
+
+#phone:visited, #phone:active, #phone:hover #phone {
+    color: #19a70c;
+}
+
+#github:visited, #github:active, #github:hover #github {
+    color: black;
+}
+
+#linked-in:visited, #linked-in:active, #linked-in:hover, #linked-in {
+    color: #3b20b1;
+}
+
+#sidebar-description {
+    padding: 2%;
+    height: 11%;
+}
+
+.router-link {
+    padding: 2%;
+    margin: 0;
+    height: 5%;
+    font-size: large;
+    text-decoration: none;
+    background-color: #b2ddcf;
+}
+
+.router-link:hover {
+    background-color: white;
+    transition: 1s;
+}
+
+.sidebar-link, .sidebar-link:hover, .sidebar-link:active, .sidebar-link:visited {
+    text-decoration: none;
+    color: black;
+    padding-left: 3%;
+}
