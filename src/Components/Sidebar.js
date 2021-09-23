@@ -15,10 +15,10 @@ const Sidebar = () => {
         <React.Fragment>
             <Router>
                 <div className="sidebar">
-                    <div id="name">
+                    <div className="name">
                         <h1>Tegveer Singh</h1>
                     </div>
-                    <div id="description">
+                    <div id="sidebar-description">
                         <p className="info">tegveer2211@gmail.com</p>
                         <p className="info">Ontario Tech University</p>
                         <p className="info">Software Engineering</p>
@@ -42,13 +42,13 @@ const Sidebar = () => {
                     </div>
                     <ul>
                         <li>
-                            <Link to='/projects'>Projects</Link>
+                            <Link to='/projects' className="sidebar-link">Projects</Link>
                         </li>
                         <li>
-                            <Link to='/certifications'>Certifications</Link>
+                            <Link to='/certifications' className="sidebar-link">Certifications</Link>
                         </li>
                         <li>
-                            <Link to='/workex'>Work Experience</Link>
+                            <Link to='/workex' className="sidebar-link">Work Experience</Link>
                         </li>
                     </ul>
                 </div>

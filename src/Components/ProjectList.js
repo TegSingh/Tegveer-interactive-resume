@@ -11,14 +11,25 @@ const ProjectList = () => {
     return (
         <React.Fragment>
             <div className="project-list">
-                {
-                    projects.map((project) => {
-                        return (
-                            < ProjectCard {...project} />
-                        );
-                    })
-                }
-                <Link to='/' className="home-button-link">Back Home</Link>
+                <div className="name-title">
+                    <div className="name-title-left">
+                        <h1>Projects</h1>
+                    </div>
+                    <div className="name-title-right">
+                        <Link to='/' className="home-button-link">Back Home</Link>
+                    </div>
+                </div>
+                <div className="space"></div>
+                <div className="underline"></div>
+                <div>
+                    {
+                        projects.map((project) => {
+                            return (
+                                < ProjectCard {...project} />
+                            );
+                        })
+                    }
+                </div>
             </div>
         </React.Fragment>
     )

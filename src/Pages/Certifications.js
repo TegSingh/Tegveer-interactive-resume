@@ -6,7 +6,6 @@ import CertificateList from '../Components/CertificateList';
 const Certifications = () => {
     return (
         <React.Fragment>
-            <h2>Certifications Page</h2>
             <CertificateList />
         </React.Fragment>
     )

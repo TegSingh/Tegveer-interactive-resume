@@ -5,7 +5,6 @@ import WorkexList from '../Components/WorkexList';
 const Workex = () => {
     return (
         <React.Fragment>
-            <h2>Work Experience Page</h2>
             <WorkexList />
         </React.Fragment>
     )

@@ -9,13 +9,23 @@ const WorkexList = () => {
     return (
         <React.Fragment>
             <div className="workex-list">
-                <h2>Workex Page</h2>
-                {
-                    workex.map((ex) => {
-                        return <WorkexCard {...ex} />
-                    })
-                }
-                <Link to='/' className="home-button-link">Back Home</Link>
+                <div className="name-title">
+                    <div className="name-title-left">
+                        <h1>Work Experience</h1>
+                    </div>
+                    <div className="name-title-right">
+                        <Link to='/' className="home-button-link">Back Home</Link>
+                    </div>
+                </div>
+                <div className="space"></div>
+                <div className="underline"></div>
+                <div>
+                    {
+                        workex.map((ex) => {
+                            return <WorkexCard {...ex} />
+                        })
+                    }
+                </div>
             </div>
         </React.Fragment>
     )

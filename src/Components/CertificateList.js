@@ -9,15 +9,25 @@ const CertificateList = () => {
     return (
         <React.Fragment>
             <div className="certificate-list">
-                <h2>Certifications Page</h2>
-                {
-                    certificates.map((certificate) => {
-                        return (
-                            < CertificateCard {...certificate} />
-                        );
-                    })
-                }
-                <Link to='/' className="home-button-link">Back Home</Link>
+                <div className="name-title">
+                    <div className="name-title-left">
+                        <h1>Licenses and Certifcations</h1>
+                    </div>
+                    <div className="name-title-right">
+                        <Link to='/' className="home-button-link">Back Home</Link>
+                    </div>
+                </div>
+                <div className="space"></div>
+                <div className="underline"></div>
+                <div>
+                    {
+                        certificates.map((certificate) => {
+                            return (
+                                < CertificateCard {...certificate} />
+                            );
+                        })
+                    }
+                </div>
             </div>
         </React.Fragment>
     )
