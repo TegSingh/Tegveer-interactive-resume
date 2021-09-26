@@ -5,6 +5,8 @@ import Dashboard from '../Pages/Dashboard';
 import Projects from '../Pages/Projects';
 import Certifications from '../Pages/Certifications';
 import Workex from '../Pages/Workex';
+import transcript from '../Pages/Transcript.pdf';
+import resume from '../Pages/Resume.pdf';
 import profile from '../Images/profile.PNG';
 import { GoMarkGithub } from 'react-icons/go';
 import { FaLinkedin } from 'react-icons/fa';
@@ -24,7 +26,7 @@ const Sidebar = () => {
                     <div id="sidebar-description">
                         <div id="github-div">
                             <p className="info">
-                                <a href="https://github.com/TegSingh" id="github" >
+                                <a href="https://github.com/TegSingh" id="github" target="_blank">
                                     <GoMarkGithub className="icons" />
                                 </a>
                             </p>
@@ -36,8 +38,7 @@ const Sidebar = () => {
                         </div>
                         <div id="linked-in-div">
                             <p className="info">
-                                {/* prevent this from moving to a new page, instead duplicate the webpage */}
-                                <a href="https://www.linkedin.com/in/tegveer-singh-067548172/" id="linked-in" >
+                                <a href="https://www.linkedin.com/in/tegveer-singh-067548172/" id="linked-in" target="_blank">
                                     <FaLinkedin className="icons" />
                                 </a>
                             </p>
@@ -57,10 +58,10 @@ const Sidebar = () => {
                             <Link to='/workex' className="sidebar-link">Work Experience</Link>
                         </p>
                         <p className="router-link">
-                            <a className="sidebar-link">Transcript</a>
+                            <a href={transcript} target="_blank" className="sidebar-link">Transcript</a>
                         </p>
                         <p className="router-link">
-                            <a className="sidebar-link">Resume</a>
+                            <a href={resume} target="_blank" className="sidebar-link">Resume</a>
                         </p>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ html, body {
 }
 
 .underline {
-    width: 97%;
+    width: 95%;
     height: 0.1rem;
     margin: auto;
     background: black;   
@@ -259,15 +259,40 @@ html, body {
 
 #dashboard {
     margin: 0;
+    padding: 0;
     top: 0;
     width: 75%;
     float: right;
 }
 
+#dashboard-title {
+    background-color: #b2ddcf;
+}
+
+#about {
+    padding: 3%;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 94%;
+}
+
+.dashboard-info {
+    padding: 1%;
+    margin-left: 2%;
+    background-color: #b19620;
+    color: white;
+    width: 28%;
+    border-radius: 10px;
+    float: left;
+}
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* Sidebar */
 /* -------------------------------------------------------------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 .sidebar {
    padding: 0;
@@ -280,6 +305,7 @@ html, body {
    width: 25%;
    background-color: rgb(214, 227, 228); 
    position: fixed;
+   overflow: auto;
 }
 
 .profile-picture {
@@ -292,7 +318,7 @@ html, body {
 }
 
 .profile-picture-div {
-    height: 44%;
+    height: 47%;
 }
 
 .name {
