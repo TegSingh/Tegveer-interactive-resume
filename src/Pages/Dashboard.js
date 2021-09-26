@@ -4,7 +4,12 @@ import { useGlobalContext } from '../context';
 
 const Dashboard = () => {
 
-    const { skillsSearchList } = useGlobalContext()
+    const { skillinput, skillsSearchList } = useGlobalContext()
+
+    const handleSubmit = () => {
+        console.log("Skill Form submitted");
+
+    }
 
     return (
         <React.Fragment>
@@ -27,7 +32,12 @@ const Dashboard = () => {
                     </p>
                 </div>
                 <div id="skills-list">
-                    <form></form>
+                    <form onSubmit={() => handleSubmit()}>
+                        <input type="text" value={skillinput} id="skill-input" placeholder="Enter skills" />
+                        <button className="submit" type="submit">
+                            Search
+                        </button>
+                    </form>
                     <ul>
                         {
                             skillsSearchList.map((skill) => {

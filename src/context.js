@@ -12,6 +12,7 @@ const initialState = {
     display_project_id: 0,
     seeCertificateDetails: false,
     display_certificate_id: 0,
+    skillInput: "",
     skillsSearchList: skills,
 };
 

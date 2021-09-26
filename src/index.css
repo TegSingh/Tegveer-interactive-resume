@@ -297,6 +297,35 @@ html, body {
     min-width: 10%;
 }
 
+#skill-input {
+    width: 75%;
+    padding: 1%;
+    margin: 2%;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-bottom: 0;
+    border-radius: 10px;
+    font-size: large;
+    color: black;
+}
+
+.submit {
+    padding: 1%;
+    margin: 2%;
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #c4c2ba;
+    color: black;
+    width: 10%;
+    font-size: large;
+}
+
+.submit:hover {
+    background-color: #adaca6;
+    transition: 1s;
+}
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* Sidebar */
 /* -------------------------------------------------------------------------------------------------------------------------------- */
