@@ -3,6 +3,7 @@ import projects from './Data/projects';
 import workex from './Data/workex';
 import certificates from './Data/certificates';
 import reducer from './reducer';
+import { skills } from './Data/skills';
 
 const AppContext = React.createContext();
 
@@ -10,7 +11,8 @@ const initialState = {
     seeProjectDetails: false,
     display_project_id: 0,
     seeCertificateDetails: false,
-    display_certificate_id: 0
+    display_certificate_id: 0,
+    skillsSearchList: skills,
 };
 
 const AppProvider = ({ children }) => {
@@ -30,6 +32,8 @@ const AppProvider = ({ children }) => {
         console.log("Show certificate details called");
         dispatch({ type: 'SHOW_CERTIFICATE_DETAILS', payload: id });
     }
+
+
     return (
         <AppContext.Provider
             value={{

@@ -1,6 +1,11 @@
 import React from 'react';
+import skills from '../Data/skills';
+import { useGlobalContext } from '../context';
 
 const Dashboard = () => {
+
+    const { skillsSearchList } = useGlobalContext()
+
     return (
         <React.Fragment>
             <div id="dashboard">
@@ -22,7 +27,14 @@ const Dashboard = () => {
                     </p>
                 </div>
                 <div id="skills-list">
-
+                    <form></form>
+                    <ul>
+                        {
+                            skillsSearchList.map((skill) => {
+                                return <p className="skill-item">{skill}</p>
+                            })
+                        }
+                    </ul>
                 </div>
             </div>
         </React.Fragment>

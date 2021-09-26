@@ -1,4 +1,4 @@
-export const languages = [
+export const skills = [
     "Python",
     "Javascript",
     "React",
@@ -12,15 +12,20 @@ export const languages = [
     "PHP",
     "HTML",
     "CSS",
-    "SQL"
-];
-
-export const skills = [
+    "SQL",
+    "Linux/Bash Scripting",
+    "Powershell Scripting",
     "Mobile App Development",
     "Web Development",
     "Artificial Intelligence Algorithms",
     "Data Structures",
-    "Behavioral/Structural Decompositions",
-    "Software Testing and Analysis"
+    "Structural Decompositions",
+    "Behavioral Decompositions",
+    "Software Testing",
+    "Quality Analysis",
+    "Solidworks 2019",
+    "CAD",
+    "Microsoft Office Suite",
+
 ];
 

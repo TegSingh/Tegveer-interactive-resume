@@ -64,6 +64,9 @@ const Sidebar = () => {
                             <a href={resume} target="_blank" className="sidebar-link">Resume</a>
                         </p>
                     </div>
+                    {
+
+                    }
                 </div>
                 <Switch>
                     <Route exact path="/"><Dashboard /></Route>
