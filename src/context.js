@@ -12,7 +12,6 @@ const initialState = {
     display_project_id: 0,
     seeCertificateDetails: false,
     display_certificate_id: 0,
-    skillInput: "",
     skillsSearchList: skills,
 };
 
@@ -20,20 +19,20 @@ const AppProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     const showProjectDetails = (id) => {
-        console.log(`Show project details called for ${id}`);
         dispatch({ type: 'SHOW_PROJECT_DETAILS', payload: id })
     };
 
     const closeProjectDetails = () => {
-        console.log("Close project details called");
         dispatch({ type: 'CLOSE_PROJECT_DETAILS' });
     };
 
     const showCertificateDetails = (id) => {
-        console.log("Show certificate details called");
         dispatch({ type: 'SHOW_CERTIFICATE_DETAILS', payload: id });
     }
 
+    const updateSkillSearchList = (searchInput) => {
+        dispatch({ type: 'UPDATE_SKILL_SEARCH_LIST', payload: searchInput })
+    }
 
     return (
         <AppContext.Provider
@@ -41,7 +40,8 @@ const AppProvider = ({ children }) => {
                 ...state,
                 showProjectDetails,
                 closeProjectDetails,
-                showCertificateDetails
+                showCertificateDetails,
+                updateSkillSearchList,
             }}
         >
             {children}

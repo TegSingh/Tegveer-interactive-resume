@@ -1,9 +1,11 @@
+import { skills } from "./Data/skills";
+
 const reducer = (state, action) => {
-    let newid = action.payload;
-    console.log("New id: ", newid);
 
     // Show the project details window
     if (action.type === 'SHOW_PROJECT_DETAILS') {
+        let newid = action.payload;
+        console.log("New id: ", newid);
         return { ...state, seeProjectDetails: true, display_project_id: newid }
     }
 
@@ -14,7 +16,14 @@ const reducer = (state, action) => {
 
     // Show the certificate details window
     if (action.type === 'SHOW_CERTIFICATE_DETAILS') {
+        let newid = action.payload;
+        console.log("New id: ", newid);
         return { ...state, seeCertificateDetails: true, display_certificate_id: newid }
+    }
+
+    if (action.type === 'UPDATE_SKILL_SEARCH_LIST') {
+        let newSearchList = skills.filter((skill) => skill.toLowerCase().includes(action.payload.toLowerCase()));
+        return { ...state, skillsSearchList: newSearchList };
     }
 };
 

@@ -13,6 +13,7 @@ export const skills = [
     "HTML",
     "CSS",
     "SQL",
+    "Git",
     "Linux/Bash Scripting",
     "Powershell Scripting",
     "Mobile App Development",

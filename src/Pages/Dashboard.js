@@ -4,12 +4,18 @@ import { useGlobalContext } from '../context';
 
 const Dashboard = () => {
 
-    const { skillinput, skillsSearchList } = useGlobalContext()
+    const { skillsSearchList, updateSkillSearchList } = useGlobalContext()
+    const [searchInput, setSearchInput] = React.useState('');
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         console.log("Skill Form submitted");
-
+        e.preventDefault();
     }
+
+    React.useEffect(() => {
+        console.log("Use effect called");
+        updateSkillSearchList(searchInput);
+    }, [searchInput])
 
     return (
         <React.Fragment>
@@ -33,18 +39,19 @@ const Dashboard = () => {
                 </div>
                 <div id="skills-list">
                     <form onSubmit={() => handleSubmit()}>
-                        <input type="text" value={skillinput} id="skill-input" placeholder="Enter skills" />
+                        <input type="text" value={searchInput} id="skill-input" placeholder="Enter skills" onChange={(e) => {
+                            setSearchInput(e.target.value);
+                        }} />
                         <button className="submit" type="submit">
                             Search
                         </button>
                     </form>
-                    <ul>
-                        {
-                            skillsSearchList.map((skill) => {
-                                return <p className="skill-item">{skill}</p>
-                            })
-                        }
-                    </ul>
+                    {
+                        skillsSearchList.map((skill, index) => {
+                            console.log(skill, index);
+                            return <p className="skill-item" key={index}>{skill}</p>
+                        })
+                    }
                 </div>
             </div>
         </React.Fragment>

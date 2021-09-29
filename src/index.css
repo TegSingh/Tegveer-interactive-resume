@@ -99,6 +99,11 @@ html, body {
     border-radius: 10px;
 }
 
+.card-header{
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
 .card-title {
     text-align: center;
     padding: 5%;
@@ -108,7 +113,6 @@ html, body {
     color: rgba(255, 255, 255, 0.959);
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-    height: 10%;
     font-size: x-large;
 }
 
@@ -289,6 +293,8 @@ html, body {
 .skill-item {
     padding: 1%;
     margin: 1%;
+    margin-left: 3%;
+    margin-right: 0;
     background-color: #c4c2ba;
     color: black;
     float: left;
@@ -358,7 +364,7 @@ html, body {
 }
 
 .profile-picture-div {
-    height: 47%;
+    height: 46.5%;
 }
 
 .name {

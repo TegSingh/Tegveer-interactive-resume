@@ -4,7 +4,7 @@ import udemy_cpp from '../Images/Certificates/Udemy-C++.png';
 const certificates = [
     {
         "id": 1,
-        "title": "Advanced C++ Programming",
+        "title": "Advanced C++ Training",
         "organization": "Udemy",
         "completion": "2021-05-14",
         "skills": [

@@ -7,8 +7,10 @@ const CertificateCard = ({ id, title, organization, completion, skills, descript
     return (
         <React.Fragment>
             <section key={id} className="card" onMouseOver={() => showCertificateDetails(id)}>
-                <p className="card-title">{title}</p>
-                <img key={id} src={image} alt={title} className="card-image" />
+                <div className="card-header">
+                    <p className="card-title">{title}</p>
+                    <img key={id} src={image} alt={title} className="card-image" />
+                </div>
                 <div className="card-info">
                     <h4>{organization}</h4>
                     <div className="underline"></div>
