@@ -46,9 +46,6 @@ const Sidebar = () => {
                     </div>
                     <div>
                         <p className="router-link">
-                            <Link to='/' className="sidebar-link">Home</Link>
-                        </p>
-                        <p className="router-link">
                             <Link to='/projects' className="sidebar-link">Projects</Link>
                         </p>
                         <p className="router-link">

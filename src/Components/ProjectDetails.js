@@ -12,7 +12,7 @@ const ProjectDetails = ({ id, category, technologies, completion, description, s
         <React.Fragment>
             <div>
                 <button className="close-button" onClick={() => closeProjectDetails()}>
-                    <ImCross />
+                    <ImCross style={{ "height": "50px" }} />
                 </button>
                 <p>Category: {category}</p>
                 <p>Completion: {completion}</p>

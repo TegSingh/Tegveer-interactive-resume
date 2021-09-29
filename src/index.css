@@ -6,7 +6,7 @@ html, body {
 }
 
 .space {
-    height: 70px;
+    height: 80px;
 }
 
 .underline {
@@ -144,15 +144,17 @@ html, body {
     position: fixed;
     color: black;
     font-size: medium;
-    margin-left: 27.5%;
+    margin-left: 17%;
     opacity: 1;
-    background-color: #f1e5e5;
+    background-color: white;
     width: 40%;
+    position: absolute;
     height: auto;
     padding: 1%;
     border-radius: 5%;
-    border: solid 2pt rgb(8, 4, 71);
+    border: none;
     filter: blur(0px);
+    font-size: large;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
@@ -166,6 +168,7 @@ html, body {
     position: absolute;
     top: 0;
     right: 0;
+    color: red;
 }
 
 .project-list-background {
@@ -278,6 +281,8 @@ html, body {
     padding-top: 0;
     padding-bottom: 0;
     width: 94%;
+    font-size: large;
+    line-height: 1.4;
 }
 
 .dashboard-info {
@@ -288,9 +293,11 @@ html, body {
     width: 28%;
     border-radius: 10px;
     float: left;
+    font-size: large;
 }
 
 .skill-item {
+    font-size: large;
     padding: 1%;
     margin: 1%;
     margin-left: 3%;
@@ -371,7 +378,7 @@ html, body {
     text-align: center;
     background-color: rgb(6, 55, 146);
     color: white;
-    padding: 0.5%;
+    padding: 1%;
     font-weight: 100;
 }
 
