@@ -30,6 +30,10 @@ const AppProvider = ({ children }) => {
         dispatch({ type: 'SHOW_CERTIFICATE_DETAILS', payload: id });
     }
 
+    const unshowCertificateDetails = (id) => {
+        dispatch({ type: 'UNSHOW_CERTIFICATE_DETAILS', payload: id });
+    }
+
     const updateSkillSearchList = (searchInput) => {
         dispatch({ type: 'UPDATE_SKILL_SEARCH_LIST', payload: searchInput })
     }
@@ -41,6 +45,7 @@ const AppProvider = ({ children }) => {
                 showProjectDetails,
                 closeProjectDetails,
                 showCertificateDetails,
+                unshowCertificateDetails,
                 updateSkillSearchList,
             }}
         >

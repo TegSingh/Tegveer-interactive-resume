@@ -23,9 +23,9 @@ const ProjectList = () => {
                 <div className="underline"></div>
                 <div>
                     {
-                        projects.map((project) => {
+                        projects.map((project, index) => {
                             return (
-                                < ProjectCard {...project} />
+                                < ProjectCard key={index} {...project} />
                             );
                         })
                     }

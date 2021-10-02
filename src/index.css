@@ -136,18 +136,20 @@ html, body {
 
 .card-info {
     padding: 5%;
-    display: none;
-    transition: 1s;
+    height: 220px;
+    background-color: #f0efe9;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
 }
 
 .card-details {
     position: fixed;
     color: black;
     font-size: medium;
-    margin-left: 17%;
+    margin-left: 11%;
     opacity: 1;
     background-color: white;
-    width: 40%;
+    width: 50%;
     position: absolute;
     height: auto;
     padding: 1%;
@@ -157,6 +159,14 @@ html, body {
     font-size: large;
 }
 
+.certificate-skill {
+    background-color: rgb(6, 55, 146);
+    color: white;
+    padding: 7px;
+    width: 30%;
+    margin: 2%;
+    border-radius: 5px;
+}
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* Projects */
 /* -------------------------------------------------------------------------------------------------------------------------------- */

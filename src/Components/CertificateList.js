@@ -21,9 +21,9 @@ const CertificateList = () => {
                 <div className="underline"></div>
                 <div>
                     {
-                        certificates.map((certificate) => {
+                        certificates.map((certificate, index) => {
                             return (
-                                < CertificateCard {...certificate} />
+                                < CertificateCard key={index} {...certificate} />
                             );
                         })
                     }

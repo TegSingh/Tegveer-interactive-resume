@@ -21,6 +21,10 @@ const reducer = (state, action) => {
         return { ...state, seeCertificateDetails: true, display_certificate_id: newid }
     }
 
+    if (action.type === 'UNSHOW_CERTIFICATE_DETAILS') {
+        return { ...state, seeCertificateDetails: true, display_certificate_id: 0 }
+    }
+
     if (action.type === 'UPDATE_SKILL_SEARCH_LIST') {
         let newSearchList = skills.filter((skill) => skill.toLowerCase().includes(action.payload.toLowerCase()));
         return { ...state, skillsSearchList: newSearchList };
