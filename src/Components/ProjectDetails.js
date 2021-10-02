@@ -3,10 +3,10 @@ import { ImCross } from 'react-icons/im';
 import { IoLogoGithub } from 'react-icons/io'
 import { useGlobalContext } from '../context';
 
-const ProjectDetails = ({ id, category, technologies, completion, description, source }) => {
+const ProjectDetails = ({ id, title, category, technologies, completion, description, image, source }) => {
 
     const { closeProjectDetails } = useGlobalContext();
-    console.log(id, category, technologies, completion, description);
+    console.log("ID: ", id, "Category: ", category, "Tech: ", technologies, "Completion: ", completion, "Desccription: ", description);
 
     return (
         <React.Fragment>

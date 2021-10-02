@@ -3,11 +3,13 @@ import { useGlobalContext } from '../context';
 import projects from '../Data/projects';
 import ProjectCard from './ProjectCard';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Sidebar from '../Components/Sidebar'
-
+import Sidebar from '../Components/Sidebar';
+import ProjectDetails from './ProjectDetails';
 
 
 const ProjectList = () => {
+
+    const { seeProjectDetails, display_project_id } = useGlobalContext();
     return (
         <React.Fragment>
             <div className="project-list">
@@ -31,6 +33,18 @@ const ProjectList = () => {
                     }
                 </div>
             </div>
+            {
+                projects.map((project, index) => {
+                    if (seeProjectDetails === true && index === display_project_id) {
+                        return (
+                            <div className="card-details">
+                                <ProjectDetails key={index} {...project} />
+                            </div>
+                        )
+                    }
+                })
+
+            }
         </React.Fragment>
     )
 }
