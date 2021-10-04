@@ -35,7 +35,7 @@ const ProjectList = () => {
             </div>
             {
                 projects.map((project, index) => {
-                    if (seeProjectDetails === true && index === display_project_id) {
+                    if (seeProjectDetails === true && index + 1 === display_project_id) {
                         return (
                             <div className="card-details">
                                 <ProjectDetails key={index} {...project} />

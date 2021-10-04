@@ -12,7 +12,6 @@ const reducer = (state, action) => {
     // Close the project details window
     if (action.type === 'CLOSE_PROJECT_DETAILS') {
         console.log("Close project details called");
-
         return { ...state, seeProjectDetails: false, display_project_id: 0 }
     }
 

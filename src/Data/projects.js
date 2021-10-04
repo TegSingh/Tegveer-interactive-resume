@@ -3,7 +3,9 @@ import tsch from '../Images/Projects/tsch-sim.png';
 import navigation from '../Images/Projects/navigation.png';
 import vulnerabilitydataset from '../Images/Projects/vulnerability-dataset.png';
 import merng from '../Images/Projects/MERNG.png';
-import gitpy from '../Images/Projects/gitpy.png'
+import gitpy from '../Images/Projects/gitpy.png';
+import social from '../Images/Projects/social.png';
+
 
 const projects = [
     {
@@ -100,6 +102,21 @@ const projects = [
         ],
         "source": "NA",
         "image": merng
+    },
+    {
+        "id": 7,
+        "title": "Social Networking Site",
+        "categories": "Personal",
+        "technologies": [
+            "React-Native", "Node", "Express", "MongoDB", "GraphQL"
+        ],
+        "completion": "Currently in progress",
+        "description": [
+            "This is social networking dummy inspired mainly by facebook",
+            "It is a personal project to learn the MERNG Stack in javascript"
+        ],
+        "source": "https://github.com/TegSingh/Social-Networking-Site",
+        "image": social
     }
 ]
 
