@@ -22,7 +22,7 @@ const projects = [
             "The image shows a simulation with clusters formed around the moving objects indicating that they have been succesfully detected",
             "A research paper for this was approved and published"
         ],
-        "source": "NA",
+        "source": "",
         "image": motl
     },
     {
@@ -76,7 +76,7 @@ const projects = [
     {
         "id": 5,
         "title": "Github Stats - Python",
-        "categories": "Research",
+        "category": "Research",
         "technologies": [
             "Python", "Git", "GitPython", "data structures"
         ],
@@ -91,7 +91,7 @@ const projects = [
     {
         "id": 6,
         "title": "Student Assistant App",
-        "categories": "Personal",
+        "category": "Personal",
         "technologies": [
             "React-Native", "Node", "Express", "MongoDB", "GraphQL", "Redux"
         ],
@@ -100,13 +100,13 @@ const projects = [
             "This app uses MERNG stack to create an app to assist student schedule",
             "It currently contains features like GPA and course grade Calculator",
         ],
-        "source": "NA",
+        "source": "",
         "image": merng
     },
     {
         "id": 7,
         "title": "Social Networking Site",
-        "categories": "Personal",
+        "category": "Personal",
         "technologies": [
             "React-Native", "Node", "Express", "MongoDB", "GraphQL"
         ],

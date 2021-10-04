@@ -2,6 +2,7 @@ import React from 'react';
 import { ImCross } from 'react-icons/im';
 import { IoLogoGithub } from 'react-icons/io'
 import { useGlobalContext } from '../context';
+import { GoMarkGithub } from 'react-icons/go';
 
 const ProjectDetails = ({ id, title, category, technologies, completion, description, image, source }) => {
 
@@ -17,15 +18,17 @@ const ProjectDetails = ({ id, title, category, technologies, completion, descrip
                 <p>Category: {category}</p>
                 <p>Completion: {completion}</p>
                 {
+                    source && <p>
+                        Can be accessed at:<a href={source} className="no-decoration-link"> source</a>
+                    </p>
+                }
+                {
                     technologies.map((technology) => {
                         return <p className="project-skill">{technology}</p>
                     })
                 }
-                <div className="space-new"></div>
-                <div>
-                    <p>{source}</p>
-                </div>
             </div>
+            <div className="space-new"></div>
             <div className="underline"></div>
             <div>
                 <ul>
