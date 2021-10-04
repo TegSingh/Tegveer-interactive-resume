@@ -11,12 +11,14 @@ import profile from '../Images/profile.PNG';
 import { GoMarkGithub } from 'react-icons/go';
 import { FaLinkedin } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
+import { useGlobalContext } from '../context';
 
 const Sidebar = () => {
+    const { seeProjectDetails } = useGlobalContext();
     return (
         <React.Fragment>
             <Router>
-                <div className="sidebar">
+                <div className={seeProjectDetails ? `sidebar-details-show` : `sidebar`}>
                     <div className="name">
                         <h1>Tegveer Singh</h1>
                     </div>

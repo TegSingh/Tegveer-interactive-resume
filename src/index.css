@@ -9,6 +9,10 @@ html, body {
     height: 80px;
 }
 
+.space-new {
+    height: 40px;
+}
+
 .underline {
     width: 95%;
     height: 0.1rem;
@@ -70,6 +74,16 @@ html, body {
     width: 75%;
     float: right;
     margin-left: 10px;
+}
+
+.project-list-details-show {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 75%;
+    float: right;
+    margin-left: 10px;
+    filter: blur(10px);
 }
 
 .certificate-list {
@@ -146,16 +160,16 @@ html, body {
 .card-details {
     color: black;
     font-size: medium;
-    margin-left: 11%;
+    margin-top: 7%;
+    margin-left: 24%;
     opacity: 1;
     background-color: white;
     width: 50%;
-    position: absolute;
+    position: fixed;
     height: auto;
     padding: 1%;
     border-radius: 20px;
     border: none;
-    filter: blur(0px);
     font-size: large;
 }
 
@@ -183,6 +197,16 @@ html, body {
 
 .project-list-background {
     filter: blur(1px)
+}
+
+.project-skill {
+    background-color: rgb(6, 55, 146);
+    color: white;
+    padding: 7px;
+    width: auto;
+    margin: 1%;
+    border-radius: 5px;
+    float: left;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
@@ -358,17 +382,32 @@ html, body {
 }
 
 .sidebar {
-   padding: 0;
-   margin: 0;
-   overflow: auto;
-   left: 0;
-   top: 0;
-   float: left;
-   height: 100%;
-   width: 25%;
-   background-color: rgb(214, 227, 228); 
-   position: fixed;
-   overflow: auto;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    float: left;
+    height: 100%;
+    width: 25%;
+    background-color: rgb(214, 227, 228); 
+    position: fixed;
+    overflow: auto;
+}
+
+.sidebar-details-show {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    float: left;
+    height: 100%;
+    width: 25%;
+    background-color: rgb(214, 227, 228); 
+    position: fixed;
+    overflow: auto;
+    filter: blur(10px);
 }
 
 .profile-picture {

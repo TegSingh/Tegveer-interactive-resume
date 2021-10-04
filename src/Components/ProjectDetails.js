@@ -16,12 +16,15 @@ const ProjectDetails = ({ id, title, category, technologies, completion, descrip
                 </button>
                 <p>Category: {category}</p>
                 <p>Completion: {completion}</p>
-                <ul>
-                    {technologies.map((technology) => {
-                        return <li>{technology}</li>
-                    })}
-                </ul>
-                <p>{source}</p>
+                {
+                    technologies.map((technology) => {
+                        return <p className="project-skill">{technology}</p>
+                    })
+                }
+                <div className="space-new"></div>
+                <div>
+                    <p>{source}</p>
+                </div>
             </div>
             <div className="underline"></div>
             <div>

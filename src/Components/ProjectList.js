@@ -12,7 +12,7 @@ const ProjectList = () => {
     const { seeProjectDetails, display_project_id } = useGlobalContext();
     return (
         <React.Fragment>
-            <div className="project-list">
+            <div className={seeProjectDetails ? `project-list-details-show` : `project-list`}>
                 <div className="name-title">
                     <div className="name-title-left">
                         <h1>Projects</h1>
