@@ -392,6 +392,56 @@ html, body {
     background-color: #adaca6;
     transition: 1s;
 }
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* Contact Me Form */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.contact-form-div {
+    width: 100%;
+    background-color: #000000;
+}
+
+.contact-form {
+    margin: auto;
+    width: 50%;
+}
+
+.from-name-div {
+    margin: 5px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 10px;
+    color: #adaca6;
+    font-size: large;
+}
+
+.from-email-div, .input-body-div {
+    margin: 5px;
+    margin-bottom: 0;
+    padding: 10px;
+    color: #adaca6;
+    font-size: large;
+}
+
+.from-name-input, .from-email-input, .input-body {
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: large;
+}
+
+#contact-button {
+    width: 93%;
+    height: 10%;
+    border-radius: 0.5em;
+    margin: 3%;
+    padding: 5px;
+    border: none;
+    background-color: #adaca6;
+    font-size: x-large;
+}
+
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* Sidebar */
 /* -------------------------------------------------------------------------------------------------------------------------------- */

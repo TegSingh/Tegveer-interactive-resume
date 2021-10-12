@@ -1,6 +1,7 @@
 import React from 'react';
 import skills from '../Data/skills';
 import { useGlobalContext } from '../context';
+import { ContactMeForm } from '../Components/ContactMeForm';
 
 const Dashboard = () => {
 
@@ -52,6 +53,16 @@ const Dashboard = () => {
                             return <p className="skill-item" key={index}>{skill}</p>
                         })
                     }
+                </div>
+                <div className="space"></div>
+                <div className="space"></div>
+                <div className="space-new"></div>
+                <div className="space-new"></div>
+                <div className="space-new"></div>
+                <div className="space-new"></div>
+                <div className="space-new"></div>
+                <div className="">
+                    <ContactMeForm />
                 </div>
             </div>
         </React.Fragment>
