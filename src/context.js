@@ -13,6 +13,7 @@ const initialState = {
     seeCertificateDetails: false,
     display_certificate_id: 0,
     skillsSearchList: skills,
+    seeContactForm: false
 };
 
 const AppProvider = ({ children }) => {
@@ -38,6 +39,14 @@ const AppProvider = ({ children }) => {
         dispatch({ type: 'UPDATE_SKILL_SEARCH_LIST', payload: searchInput })
     }
 
+    const showContactForm = () => {
+        dispatch({ type: 'SHOW_CONTACT_FORM' });
+    }
+
+    const unshowContactForm = () => {
+        dispatch({ type: 'UNSHOW_CONTACT_FORM' });
+    }
+
     return (
         <AppContext.Provider
             value={{
@@ -47,6 +56,8 @@ const AppProvider = ({ children }) => {
                 showCertificateDetails,
                 unshowCertificateDetails,
                 updateSkillSearchList,
+                showContactForm,
+                unshowContactForm
             }}
         >
             {children}

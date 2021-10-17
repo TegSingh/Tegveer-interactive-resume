@@ -14,7 +14,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { useGlobalContext } from '../context';
 
 const Sidebar = () => {
-    const { seeProjectDetails } = useGlobalContext();
+    const { seeProjectDetails, showContactForm } = useGlobalContext();
     return (
         <React.Fragment>
             <Router>
@@ -35,7 +35,7 @@ const Sidebar = () => {
                         </div>
                         <div id="phone-div">
                             <p className="info" id="phone" >
-                                <FiPhoneCall className="icons" />
+                                <FiPhoneCall onClick={() => showContactForm()} className="icons" />
                             </p>
                         </div>
                         <div id="linked-in-div">

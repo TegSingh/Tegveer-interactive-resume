@@ -30,6 +30,17 @@ const reducer = (state, action) => {
         let newSearchList = skills.filter((skill) => skill.toLowerCase().includes(action.payload.toLowerCase()));
         return { ...state, skillsSearchList: newSearchList };
     }
+
+    if (action.type === 'SHOW_CONTACT_FORM') {
+        console.log("Show contact form method called from reducer");
+        return { ...state, seeContactForm: true };
+    }
+
+    if (action.type === 'UNSHOW_CONTACT_FORM') {
+        console.log("Unshow contact form called from reducer");
+        return { ...state, seeContactForm: false };
+    }
+
 };
 
 export default reducer;

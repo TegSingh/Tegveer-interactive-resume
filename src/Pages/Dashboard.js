@@ -5,7 +5,7 @@ import { ContactMeForm } from '../Components/ContactMeForm';
 
 const Dashboard = () => {
 
-    const { skillsSearchList, updateSkillSearchList } = useGlobalContext()
+    const { skillsSearchList, updateSkillSearchList, showContactForm, unshowContactForm, seeContactForm } = useGlobalContext()
     const [searchInput, setSearchInput] = React.useState('');
 
     const handleSubmit = (e) => {
@@ -20,7 +20,7 @@ const Dashboard = () => {
 
     return (
         <React.Fragment>
-            <div id="dashboard">
+            <div id={seeContactForm ? `dashboard-contact-form-show` : `dashboard`}>
                 <div id="dashboard-title">
                     <div className="name-title">
                         <h1>About me</h1>
@@ -54,18 +54,11 @@ const Dashboard = () => {
                         })
                     }
                 </div>
-                <div className="space"></div>
-                <div className="space"></div>
-                <div className="space-new"></div>
-                <div className="space-new"></div>
-                <div className="space-new"></div>
-                <div className="space-new"></div>
-                <div className="space-new"></div>
-                <div className="">
-                    <ContactMeForm />
-                </div>
             </div>
-        </React.Fragment>
+            <div>
+                <ContactMeForm />
+            </div>
+        </React.Fragment >
     )
 }
 
