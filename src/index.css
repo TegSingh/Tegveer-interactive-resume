@@ -498,7 +498,7 @@ html, body {
     background-color: rgb(214, 227, 228); 
     position: fixed;
     overflow: auto;
-    filter: blur(10px);
+    filter: blur(50px);
 }
 
 .profile-picture {

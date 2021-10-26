@@ -35,7 +35,9 @@ const Sidebar = () => {
                         </div>
                         <div id="phone-div">
                             <p className="info" id="phone" >
-                                <FiPhoneCall onClick={() => showContactForm()} className="icons" />
+                                <Link to='/' className="sidebar-link">
+                                    <FiPhoneCall onClick={() => showContactForm()} className="icons" />
+                                </Link>
                             </p>
                         </div>
                         <div id="linked-in-div">
