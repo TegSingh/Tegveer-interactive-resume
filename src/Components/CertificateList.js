@@ -2,7 +2,6 @@ import React from 'react';
 import certificates from '../Data/certificates';
 import CertificateCard from './CertificateCard';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Sidebar from '../Components/Sidebar'
 
 
 const CertificateList = () => {

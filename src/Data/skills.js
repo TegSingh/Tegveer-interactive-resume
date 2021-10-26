@@ -27,6 +27,7 @@ export const skills = [
     "Solidworks 2019",
     "CAD",
     "Microsoft Office Suite",
-
+    "Android Studio",
+    "TensorFlow"
 ];
 

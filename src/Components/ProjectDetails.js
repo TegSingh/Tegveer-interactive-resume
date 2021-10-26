@@ -1,8 +1,6 @@
 import React from 'react';
 import { ImCross } from 'react-icons/im';
-import { IoLogoGithub } from 'react-icons/io'
 import { useGlobalContext } from '../context';
-import { GoMarkGithub } from 'react-icons/go';
 
 const ProjectDetails = ({ id, title, category, technologies, completion, description, image, source }) => {
 

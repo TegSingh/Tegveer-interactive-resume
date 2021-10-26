@@ -23,7 +23,7 @@ const Sidebar = () => {
                         <h1>Tegveer Singh</h1>
                     </div>
                     <div className="profile-picture-div">
-                        <img src={profile} alt="Profile-picture" className="profile-picture" />
+                        <img src={profile} alt="profile" className="profile-picture" />
                     </div>
                     <div id="sidebar-description">
                         <div id="github-div">
@@ -36,7 +36,7 @@ const Sidebar = () => {
                         <div id="phone-div">
                             <p className="info" id="phone" >
                                 <Link to='/' className="sidebar-link">
-                                    <FiPhoneCall onClick={() => showContactForm()} className="icons" />
+                                    <FiPhoneCall onClick={() => showContactForm()} style={{ "color": "#19a70c" }} className="icons" />
                                 </Link>
                             </p>
                         </div>

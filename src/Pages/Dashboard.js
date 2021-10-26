@@ -1,5 +1,4 @@
 import React from 'react';
-import skills from '../Data/skills';
 import { useGlobalContext } from '../context';
 import { ContactMeForm } from '../Components/ContactMeForm';
 
@@ -32,7 +31,7 @@ const Dashboard = () => {
                     <p className="dashboard-info">Software Engineering</p>
                 </div>
                 <div className="space"></div>
-                <div className="underline"></div>
+                <div className="underline" style={{ "color": "black" }}></div>
                 <div>
                     <p id="about">
                         Hello, I am an Final year Undergraduate Software engineering student at Ontario Tech University specializing in Internet of Things. I like music and I have a passion for troubleshooting. I enjoy programming and watching anime in my spare time. I am currently working as a Research Associate at my university under the supervision of my professors. Along with this, I am taking final year courses including embedded systems and mobile app development. I expect to graduate April 2022. In the future, I plan on working on machine learning algorihms that are embedded in IoT devices. I also produce music and upload videos on social media platforms once in a while. I am an international student and have been studying in Ontario, Canada for around 4 years now.
@@ -49,7 +48,6 @@ const Dashboard = () => {
                     </form>
                     {
                         skillsSearchList.map((skill, index) => {
-                            console.log(skill, index);
                             return <p className="skill-item" key={index}>{skill}</p>
                         })
                     }

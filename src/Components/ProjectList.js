@@ -3,7 +3,6 @@ import { useGlobalContext } from '../context';
 import projects from '../Data/projects';
 import ProjectCard from './ProjectCard';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Sidebar from '../Components/Sidebar';
 import ProjectDetails from './ProjectDetails';
 
 
