@@ -34,7 +34,7 @@ const Dashboard = () => {
                 <div className="underline" style={{ "color": "black" }}></div>
                 <div>
                     <p id="about">
-                        Hello, I am an Final year Undergraduate Software engineering student at Ontario Tech University specializing in Internet of Things. I like music and I have a passion for troubleshooting. I enjoy programming and watching anime in my spare time. I am currently working as a Research Associate at my university under the supervision of my professors. Along with this, I am taking final year courses including embedded systems and mobile app development. I expect to graduate April 2022. In the future, I plan on working on machine learning algorihms that are embedded in IoT devices. I also produce music and upload videos on social media platforms once in a while. I am an international student and have been studying in Ontario, Canada for around 4 years now.
+                        Hello, I am an Final year Undergraduate Software engineering student at Ontario Tech University specializing in Internet of Things. I like programming and have a passion for troubleshooting. I enjoy listening to music and watching anime in my spare time. I am currently working as a Research Associate at my university under the supervision of my professors. I enjoy working on machine learning algorithms and data managemnet systems. I expect to graduate in April 2022. I am an international student and have been studying in Ontario, Canada for around 4 years now.
                     </p>
                 </div>
                 <div id="skills-list">

@@ -413,7 +413,7 @@ html, body {
 .contact-form-div {
     color: black;
     margin-top: 10%;
-    margin-left: 44%;
+    margin-left: 42%;
     opacity: 1;
     background-color: rgb(0, 0, 0);
     width: 40%;
@@ -483,7 +483,7 @@ html, body {
     float: left;
     height: 100%;
     width: 25%;
-    background-color: rgb(177, 162, 162); 
+    background-color: #c4c2ba; 
     position: fixed;
     overflow: auto;
 }
@@ -497,7 +497,7 @@ html, body {
     float: left;
     height: 100%;
     width: 25%;
-    background-color: rgb(214, 227, 228); 
+    background-color: #c4c2ba ;
     position: fixed;
     overflow: auto;
     filter: blur(50px);

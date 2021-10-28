@@ -17,7 +17,7 @@ const ProjectDetails = ({ id, title, category, technologies, completion, descrip
                 <p>Completion: {completion}</p>
                 {
                     source && <p>
-                        Can be accessed at:<a href={source} className="no-decoration-link"> source</a>
+                        Can be accessed at:<a href={source} className="no-decoration-link" target="_blank"> source</a>
                     </p>
                 }
                 {
